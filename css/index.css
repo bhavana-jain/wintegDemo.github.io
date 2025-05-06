@@ -1,0 +1,18 @@
+
+.wg-learning-hub{
+  background-color: #f9f9f9!important;
+ }
+.connect-telegram {
+display: flex;
+justify-content: center;
+margin-left: auto;
+align-items: center;
+}
+.connect-telegram:before{
+content: '';
+display: inline-block;
+background:url('images/telegram-icon.png') bottom no-repeat;
+background-size: cover;
+width: 240px;
+height: 150px;
+}

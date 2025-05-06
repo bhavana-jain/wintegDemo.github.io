@@ -1,0 +1,476 @@
+
+.wg-learning-hub{
+background-color: #f9f9f9!important;
+}
+.connect-telegram {
+display: flex;
+justify-content: center;
+margin-left: auto;
+align-items: center;
+}
+.connect-telegram:before{
+content: '';
+display: inline-block;
+background:url('../images/telegram-icon.png') bottom no-repeat;
+background-size: cover;
+width: 240px;
+height: 150px;
+}
+
+.belief-section{
+padding: 90px 0 70px 0;
+}
+> div:first-child {
+border: 1px solid rgba(0,0,0,.1);
+}
+.w_beliefs {
+>div:last-child {
+padding-left: 60px;
+}
+}
+.section-title{
+font-family: 'Roboto-Reg',Helvetica,Arial,Lucida,sans-serif;
+font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 4px;
+color: #a9a9ba;
+font-size: 16px;
+}
+.belief-impact {
+padding: 0 0 40px 0;
+margin-left: 20px;
+>  li {
+font-size: 19px;
+line-height: 26px;
+}
+}
+.beliefs-vision{
+font-size: 32px;
+line-height: 44px;
+margin:0;
+}
+.belief-values {
+list-style-type: none;
+padding-left: 0;
+display: table;
+h4 {
+color: #00ccdb;
+padding: 0 0 10px 0;
+margin: 0;
+font-size: 20px;
+}
+> li {
+display: table-cell;
+width: 50%;
+float: left;
+padding-bottom: 20px;
+> p {
+margin: 0;
+color: #666;
+padding-right: 20px;
+line-height: 23px;
+}
+}
+}
+.w_dashboard {
+background: url('../images/Winteg-People-Solutions-Contact-Us-Ele-01-scaled.jpg') no-repeat; 
+background-size: cover;
+color: #fff !important;
+text-align: center;
+padding: 80px 0;
+.animated {
+     img {animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;
+    }
+}
+.section-title {
+margin-bottom: 15px;
+}
+h1 {
+line-height: 56px;
+width: 60%;
+margin: 0 auto;
+}
+.counter{ 
+    font-weight: normal;
+    font-size: 40px;
+    &:after {
+        content: attr(data-sign);
+    }
+}
+* {
+color: #fff;
+}
+.dashboard-grid {
+display: table;
+width: 100%;
+> div {
+    display: table-cell;
+    img {
+        width: 150px;
+        transform: scale(0);
+        &.visible {
+            transform: scale(1);
+            transition: transform 0.4s linear;
+        }
+    }
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        width: 60%;
+margin:0 auto;
+    }
+}
+}
+}
+.learning-domains {
+list-style-type: none;
+margin:0;
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+li {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+img {
+    width: 70px;
+    transform: translate(-5%);
+    opacity: 0.5;
+    &.visible {
+        transform: translate(0);
+    opacity: 1;
+    transition: transform .4s linear;
+    }
+}
+h4 {
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: normal;
+}
+}
+.w_clientele {
+background: url('../images/Winteg-People-Solutions-About-Us-Ele-06-scaled.jpg') no-repeat;
+padding: 70px 0;
+text-align: center;
+background-size: cover;
+> .section-title, h1{
+    color: #fff !important;
+    text-align: center;
+}
+.clientele-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    > li {
+        flex-basis: 25%;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        &:before {
+            content: "\35";
+            font-family: 'wg-icons';
+            color: #00b0c8;
+            font-size: 32px;
+            transform: translateY(-20%);
+        }
+        &.visible 
+        {
+            &::before{
+                transform: translateY(0);
+                transition: transform .3s ease-in;
+            }
+        }
+    }
+    h4{
+        font-size: 18px;
+        color: #fff;
+        line-height: 34px;
+        font-weight: normal;
+        margin: 0;
+        padding-left: 5px;
+    }
+}
+}
+.w_contactUs {
+background: #00ccdb url('../images/Winteg-People-Soluitons-Footer-Contact-Us-Ele-01.png') no-repeat;
+padding: 150px 0 0px 0;
+.contactUs-img {
+    background: url('../images/Winteg-People-Soluitons-Footer-Contact-Us-Ele-02.png') no-repeat;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 85%;
+height: 100%;
+width: 100%;
+}
+.contactUs-form{
+    background-color: #fff;
+    padding:60px 50px;
+    h1 {
+        margin-top: 0;
+    }
+    input, select, textarea {
+        padding: 16px;
+        color: #999;
+        background-color: #f7f7f7;
+        font-size: 14px;
+        font-family: 'Roboto-Reg';
+        border: 0;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .validator {
+        display: flex;
+        align-items: center;
+        input {
+            width: 50px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
+}
+}
+.w_footer {
+background-color: rgba(0,0,0,0.87) !important;
+padding: 70px 0 0 0; 
+font-family: 'Roboto-Lig',Helvetica,Arial,Lucida,sans-serif;
+h2 {
+font-family: 'Roboto-Lig',Helvetica,Arial,Lucida,sans-serif;
+font-size: 27px;
+color: #ffffff !important;
+line-height: 2em;
+font-weight: normal;
+margin: 0;
+padding-bottom: 10px;
+}
+.quick-links {
+    margin: 0 ;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    > li {
+        flex-basis: 50%;
+        padding-bottom: 16px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    }
+}
+.follow-us {
+    margin: 0 ;
+    list-style-type: none;
+    padding: 0;
+    > li {
+        padding-bottom: 16px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    }
+}
+.footer-copy {
+    margin-top: 50px;
+    padding: 15px 0;
+    background-color: rgba(0,0,0,0.9);
+    font-family: 'Roboto-Lig',Helvetica,Arial,Lucida,sans-serif;
+}
+}
+.w_testimonial {
+    background-color:#f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+    .testimonial-grid{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+            background-color: #fff;
+            padding: 40px;
+            margin-right: 60px;
+            flex-basis: 33.33%;
+            text-align: left;
+            .name {
+                color: #00b0c8;
+                margin-bottom: 10px;
+                font-weight: normal;
+                font-size: 20px;
+            }
+            p {
+                line-height: 27px;
+                color: #666;
+            }
+        }
+    }
+}
+.w_talent {
+    background: url('../images/Winteg-People-Soluitons-Footer-Contact-Us-Ele-01.png') no-repeat;
+    padding: 70px 0;
+    text-align: center;
+    background-size: cover;
+.staffing-solutions {
+    list-style-type: none;
+    img {
+        width: 110px;
+        opacity: 0;
+        transform: translateY(-20%);
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 1s linear;
+        }
+    }
+    .cta-link {
+        padding-top: 40px;
+        display: inline-block;
+    }
+    p {
+        font-size: 18px;
+        color: #666;
+        line-height: 28px;
+    }
+    h4 {
+        font-size: 22px;
+        margin: 0 0 10px 0;
+        font-weight: normal;
+        color: #4b4a50;
+    }
+}
+}
+.w_learning {
+    .fadeLeft{
+        opacity: 0.5;
+transform: translateX(-10%);
+    }
+    .fadeRight {
+        opacity: 0.5;
+        transform: translateX(10%);
+    }
+    &.visible {
+        .fadeLeft{
+            opacity: 1;
+            transform: translateX(0);
+            transition: all .3s linear;
+                }
+                .fadeRight {
+                opacity: 1;
+                    transform: translateX(0);
+                    transition: all .3s linear;
+                }
+    }
+}
+.w_consulting{
+    text-align: center;
+    padding: 70px 0;
+    ul {
+        padding-bottom: 70px;
+        list-style: none;
+        li {
+            text-align: left;
+            &:nth-child(n+4){
+                margin-top: 60px;
+            }
+            img {
+                opacity: 0;
+            transform: translateY(-20%);
+            &.visible {
+              transform: translateY(0);
+              opacity: 1;
+              transition: all .5s linear;
+            }
+            }
+            h4 {
+                font-size: 22px;
+                color:#00ccdb;
+                margin:30px 0 10px 0;
+                font-weight: normal;
+            }
+            p {
+                line-height: 27px;
+                color: #666;
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1079px) {
+.connect-telegram:before{ display: none;}
+.wg-learning-hub {
+    padding-top:40px;
+    padding-bottom: 40px;
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.connect-telegram{
+    margin-left: 0;
+}
+}
+.w_beliefs {
+    flex-direction: column;
+img {
+    max-width: 100% !important;
+}
+    >div:last-child {
+    padding-left: 0;
+}
+.belief-values {
+    li {
+        width : 100%; 
+        float: none;
+        display: block;
+    }
+}
+}
+.belief-section{
+padding: 50px 0 50px 0;
+}
+.w_dashboard {
+    .dashboard-grid  {
+        > div {
+            display: block ;
+        }
+    }
+}
+.contactUs-form{ 
+    .contactUs-img{
+        display: none;
+    }
+}
+.w_testimonial {
+    .testimonial-grid{
+        display: block;
+        li {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+.learning-domains {
+    li {
+        flex-basis: 100%;
+    }
+}
+.w_clientele {
+    .clientele-list > li{
+        flex-basis: 100%;
+    }
+}
+.w_consulting {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+}

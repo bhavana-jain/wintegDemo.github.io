@@ -1,0 +1,102 @@
+/* */
+header {
+    position: fixed;
+background-color: #fff;
+width: 100%;
+z-index: 100;
+}
+.header{
+margin: 0 auto;
+display: flex;
+align-items: center;
+height: 96px;
+&.scale-down {
+    .winteg-logo{ 
+        height: 50px;
+        transition: height 0.5s ease-out;
+}
+}
+}
+navbar{
+margin-left: auto;
+.nav-links{
+list-style: none;
+display: flex;
+.active a {
+    color:#00b0c8;
+}
+}
+li {
+padding-right: 22px;
+> a {
+text-decoration: none;
+font-size: 16px;
+color: #666;
+}
+}
+}
+.winteg-logo{
+background-image: url('../images/Winteg-People-Solutions-Logo-Full.svg');
+width: 246px;
+height: 56px;
+background-repeat: no-repeat;
+transition: height 0.5s ease-out;
+}
+
+
+.menu-icon {
+display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+.header {
+position: relative;
+}
+.menu-icon {
+display: inline-block;
+}
+.menu-icon:before{
+font-family: 'wg-icons';
+content: "\61";
+font-size:25px;
+color: #0BB0C7;
+}
+.wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    &.is-open {
+        grid-template-rows: 1fr;
+    }
+    .inner {
+        overflow: hidden;
+    }
+}
+.connect-telegram:before{
+display: none !important;
+}
+.nav-links{
+    flex-direction: column;
+    background-color: #fff;
+    
+    li {
+    padding-right: 0;
+    &:first-child {
+        border-top: 3px solid #00ccdb;
+    }
+    }
+    li a {
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+    padding: 10px 5%;
+    display: block;
+    }
+    }
+.nav-links-wrap{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+}

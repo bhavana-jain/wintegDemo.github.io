@@ -1,0 +1,127 @@
+@import "header.scss";
+@import "home.scss";
+@import "grids.scss";
+@import "animations.scss";
+
+body{
+font-family: 'Roboto-Reg',Helvetica,Arial,Lucida,sans-serif;
+font-size: 16px;
+color: #4b4a50;
+padding: 0;
+margin: 0;
+}
+@font-face {
+    font-family: "Roboto-Reg";
+    font-display: swap;
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype")
+  }
+  
+  @font-face {
+    font-family: "Roboto-Lig";
+    font-display: swap;
+    src: url("../fonts/Roboto-Light.ttf") format("truetype")
+  }
+  
+  @font-face {
+    font-family: "Roboto-Reg";
+    font-display: swap;
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype")
+  }
+  
+  @font-face {
+    font-family: "Roboto-Med";
+    font-display: swap;
+    src: url("..fonts/Roboto-Medium.ttf") format("truetype")
+  }
+  @font-face {
+    font-family: 'wg-icons';
+    src:url(../fonts/modules.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/modules.woff) format("woff"),url(../fonts/modules.ttf) format("truetype"),url(../fonts/modules.svg) format("svg");
+  }
+  body {
+    overflow-x: hidden;
+  }
+.container {
+max-width: 1080px;
+margin: 0 auto;
+}
+.flex-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+button {
+background-color: #0BB0C7;
+padding: 15px 35px;
+color: #fff;
+border:transparent;
+font-family: 'Roboto-Reg',Helvetica,Arial,Lucida,sans-serif;
+font-size: 20px;
+&:after {
+  content: "\35";
+  font-family: 'wg-icons';
+  font-size: 30px;
+  position: relative;
+  left: -25px;
+  transition: all  0.5s ease-out;
+  top: -2px;
+  display: inline;
+  vertical-align: middle;
+  opacity: 0;
+}
+&:hover {
+    &:after {
+      left: 0;
+      opacity: 1;
+      transition: all  0.5s ease-in;
+    }
+}
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #4b4a50;
+  font-family:'Roboto',Helvetica,Arial,Lucida,sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+.highlighter {
+  color: #00ccdb;
+}
+.divider {
+  border-top: 1px solid rgba(0,0,0,0.09);
+  margin: 50px 0;
+}
+.right {
+  float: right;
+}
+.clearfix {
+  clear:both;
+}
+.relative {
+  position: relative;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.cta-link {
+  text-decoration: none;
+  color:#00b0c8;
+  &:after{
+    content: "\24";
+    font-family: 'wg-icons';
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+.gutter-space {
+  padding: 40px;
+}
+.animated img { animation: fadeTop 1s cubic-bezier(.77,0,.175,1) 1;}
+
+@media screen  and (max-width: 1079px) {
+  .container{ 
+    padding: 0 40px;
+  }
+}

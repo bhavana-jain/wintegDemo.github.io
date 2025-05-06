@@ -1,0 +1,160 @@
+.carousel-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .simple-slider {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            transition: transform 1s ease, opacity 1s ease;
+        }
+        
+        .slide:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+            z-index: 1;
+        }
+        
+        .slide:nth-child(1) {
+            background-image: url("../images/Winteg-People-Solutions-Slider-01-scaled.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .slide:nth-child(2) {
+            background-image: url("../images/Winteg-People-Solutions-Slider-02-scaled.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .slide:nth-child(3) {
+            background-image: url("../images/Winteg-People-Solutions-Slider-03-scaled.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .slide-content {
+            max-width: 450px;
+            z-index: 2;
+            position: relative;
+            padding-left: 40px;
+        }
+        .slide-content.content-left {
+            position: absolute;
+            left: 0;
+        }
+        .slide-content > * {color: #fff;}
+        .slide-content h1 { font-size: 70px; line-height: 90px; font-weight: normal; font-family: 'Roboto';}
+        .slide-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(-10%);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .slide-subtitle {
+            font-size: 70px;
+            line-height: 90px; font-weight: normal;
+            font-family: 'Roboto-Lig';
+        }
+        .slide-description {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin-right: auto;
+        }
+        
+        .slide-button {
+            padding: 15px 30px;
+            background-color: white;
+            color: #333;
+            border: none;
+            border-radius: 0;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s, background-color 0.3s;
+            &:after {
+                content:'' !important;
+            }
+        }
+        
+        .slide-button:hover {
+            background-color: #f0f0f0;
+        }
+        
+        
+        .indicators-container {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            z-index: 10;
+        }
+        
+        .indicator {
+            width: 60px;
+            height: 4px;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            position: relative;
+            border-radius: 0;
+            overflow: hidden;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .indicator.active {
+            background-color: #fff;
+        }
+        
+        .indicator-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background-color: white;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        }
+        
+        .indicator.active .indicator-progress {
+            width: 100%;
+            transition: width 5s linear; /* Match this with autoPlayDelay */
+        }
+        .spliter {
+            width: 110px;
+            height: 5px;
+            background-color: #fff;
+           margin-top: 20px;
+           margin-bottom: 20px;
+        }
